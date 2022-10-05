@@ -1,0 +1,200 @@
+html {
+  font-size: 22px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #000;
+  /* opacity: 0.9; */
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* text-align: center; */
+  color: gray;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  width: 83.3%;
+  /* max-width: 1200px; */
+  z-index: 10;
+}
+
+#header > div {
+  display: flex;
+}
+
+.logo-container {
+  width: 50%;
+  
+  border: 1px solid red;
+}
+
+#logo{
+  width: 50%;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid green;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  /* padding-top: 0.3rem;
+  padding-left: 0.455rem; */
+}
+
+#logo img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 .3rem; */
+  
+}
+
+header #header-nav {
+  float: right;
+
+  /* display: inline-flex; */
+}
+
+#header-nav a {
+  font-size: 0.8rem;
+  /* margin: 0.8rem; */
+  color: gray;
+}
+
+#mission {
+  background-image: url("./img-mission-background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  height: 700px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+
+  display: flex;
+  place-content: center;
+}
+
+#mission .mission-div {
+  background-color: black;
+  text-align: center;
+  height: 15%;
+}
+
+#mission .mission-div h4 {
+  margin: 0.3rem;
+}
+
+#mission .mission-div h2 {
+  margin-top: 0.3rem;
+}
+
+#featured-tea {
+  /* background-color: #fff; */
+  
+  max-width: 1200px;
+}
+
+#featured-tea-div {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: auto;
+}
+#featured-tea-images {
+  width: 100%;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#featured-tea-images figure {
+  width: 30%;
+  margin: 0.4rem;
+  text-align: center;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+#featured-tea-images figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#featured-tea-images figure figcaption {
+  
+  height: auto;
+  display: block;
+  margin: 0.455rem;
+}
+
+#locations {
+  background-image: url("./img-locations-background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1200px;
+  height: 500px;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+
+#locations .locations-div-container {
+  width: 83%;
+  border: 1px solid red;
+  display: inline-flex;
+  justify-content: space-between;
+  
+}
+
+.locations-div-container div {
+  background-color: black;
+  width: 30%;
+  /* height: auto; */
+  /* margin: 0 1.82rem; */
+}
+
+footer {
+  max-width: 1200px;
+  text-align: center;
+  height: 200px;
+  border: 1px solid red;
+}
+
+footer .copyright {
+  float: left;
+  font-size: .6rem;
+  margin-left: 0.9em;
+  margin-top: .4em;
+}
+
+.footer-h5 {
+font-size: .6em;
+}
+
+.footer-h2 {
+  font-size: 1.1em;
+}
+
+footer .clearfix {
+  clear: both;
+}
