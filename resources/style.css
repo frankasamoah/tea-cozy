@@ -6,17 +6,25 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: #000;
   /* opacity: 0.9; */
-  
+  /* margin: auto; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* text-align: center; */
   color: gray;
+  
 }
+
+main {
+  position: relative;
+  /* margin: auto; */
+}
+
 
 header {
   width: 100%;
   max-width: 1200px;
+  /* margin: auto; */
 }
 
 #header {
@@ -37,6 +45,8 @@ header {
 
 #header > div {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
@@ -68,15 +78,11 @@ header {
   
 }
 
-header #header-nav {
-  float: right;
 
-  /* display: inline-flex; */
-}
 
 #header-nav a {
   font-size: 0.8rem;
-  /* margin: 0.8rem; */
+  margin: 0.8rem;
   color: gray;
 }
 
@@ -156,51 +162,110 @@ header #header-nav {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1200px;
-  height: 500px;
+  /* height: 500px; */
   opacity: 0.9;
   display: flex;
   flex-direction: column;
-  
+  height: 700px;
   align-items: center;
+  
+  /* width: 83%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: auto; */
+
 }
 
-#locations .locations-div-container {
-  width: 83%;
-  border: 1px solid red;
-  display: inline-flex;
-  justify-content: space-between;
+
+
+
+#locations > h2 {
+  font-size: 1.2em;
+  opacity: 1;
   
 }
 
-.locations-div-container div {
-  background-color: black;
-  width: 30%;
-  /* height: auto; */
-  /* margin: 0 1.82rem; */
+
+#locations .locations-div {
+  width: 83%;
+  
+  display: inline-flex;
+  justify-content: center;
+  /* align-items: center; */
+  
 }
 
-footer {
+
+.locations-div .container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  
+  /* border: 1px solid red; */
+  margin: 1.8em;
+  background-color: black;
+}
+
+.locations-div .container div{
+  max-width: 100%;
+  height: auto;
+  /* display: block; */
+  text-align: center;
+  /* font-weight: 600; */
+ 
+ 
+}
+
+
+.locations-div .container h4{
+  font-size: 0.7em;
+  }
+
+  .locations-div .container h3{
+    font-size: 0.9em;
+    }
+
+#contact-section {
+  width: 100%;
   max-width: 1200px;
   text-align: center;
   height: 200px;
   border: 1px solid red;
+  position: absolute;
+  bottom: 0;
+ z-index: 10;
+ background-color: #000;
 }
 
+
+.contact-section-h2 {
+  font-size: 1.1em;
+}
+
+#contact-section h5 {
+  font-size: .6em;
+}
+
+
+
 footer .copyright {
-  float: left;
+  /* float: left; */
   font-size: .6rem;
   margin-left: 0.9em;
   margin-top: .4em;
 }
 
-.footer-h5 {
-font-size: .6em;
-}
-
-.footer-h2 {
-  font-size: 1.1em;
-}
-
-footer .clearfix {
-  clear: both;
+@media only screen and (max-width: 600px) {
+   #locations .locations-div {
+    width: 100%;
+    height: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center; 
+    
+  }
 }
